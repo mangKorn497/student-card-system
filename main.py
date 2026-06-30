@@ -26,21 +26,21 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="สร้างบัตรนักศึกษา (HTML) จากข้อมูลที่กำหนด"
     )
-    parser.add_argument("--student-id", default="67123456", help="รหัสนักศึกษา")
-    parser.add_argument("--first-th", default="ลิซ่า", help="ชื่อ (ไทย)")
-    parser.add_argument("--last-th", default="มโนบาล", help="สกุล (ไทย)")
-    parser.add_argument("--first-en", default="Lisa", help="ชื่อ (อังกฤษ)")
-    parser.add_argument("--last-en", default="Manoban", help="สกุล (อังกฤษ)")
+    parser.add_argument("--student-id", default="674259002", help="รหัสนักศึกษา")
+    parser.add_argument("--first-th", default="ชญานนท์", help="ชื่อ (ไทย)")
+    parser.add_argument("--last-th", default="อารีย์", help="สกุล (ไทย)")
+    parser.add_argument("--first-en", default="Chayanon", help="ชื่อ (อังกฤษ)")
+    parser.add_argument("--last-en", default="Aree", help="สกุล (อังกฤษ)")
     parser.add_argument(
         "--faculty", default="คณะวิทยาศาสตร์และเทคโนโลยี", help="สาขาวิชา/คณะ"
     )
     parser.add_argument(
         "--photo",
-        default="assets/photos/lisa.jpg",
+        default="assets/photos/default.jpg",
         help="path ของรูปถ่าย (ใส่รูปตัวเองได้)",
     )
-    parser.add_argument("--prefix-th", default="นางสาว", help="คำนำหน้า (ไทย)")
-    parser.add_argument("--prefix-en", default="MISS", help="คำนำหน้า (อังกฤษ)")
+    parser.add_argument("--prefix-th", default="นาย", help="คำนำหน้า (ไทย)")
+    parser.add_argument("--prefix-en", default="MR", help="คำนำหน้า (อังกฤษ)")
     parser.add_argument(
         "--output", default="student_card.html", help="ชื่อไฟล์ HTML ที่จะสร้าง"
     )
