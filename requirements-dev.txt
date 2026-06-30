@@ -1,0 +1,4 @@
+# Minimal dependencies required to run the system and its tests.
+# ใช้ไฟล์นี้ถ้าไม่ต้องการติดตั้ง dependency เสริม (web / pdf).
+pytest==7.4.3
+pytest-cov==4.1.0
