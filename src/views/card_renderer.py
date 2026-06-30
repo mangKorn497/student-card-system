@@ -141,7 +141,7 @@ body {
 }
 .card-front, .card-back {
     width: 540px;
-    height: 340px;
+    min-height: 340px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(0,0,0,0.3);
@@ -149,6 +149,8 @@ body {
 }
 .card-front {
     background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+    display: flex;
+    flex-direction: column;
 }
 .card-back {
     background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
@@ -180,6 +182,7 @@ body {
     display: flex;
     gap: 20px;
     margin-top: 10px;
+    position: relative;
 }
 .student-photo {
     width: 120px;
@@ -295,10 +298,7 @@ body {
     padding: 8px;
     font-weight: bold;
     font-size: 14px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    margin-top: auto;
 }
 .magnetic-strip {
     height: 50px;
